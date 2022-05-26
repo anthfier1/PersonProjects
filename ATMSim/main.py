@@ -6,30 +6,11 @@ import mysql.connector
 mydb = mysql.connector.connect(
 
     host='localhost',  # host name
-    user='root',  # username
-    password='Anthony13',  # password
+    user='',  # username
+    password='',  # password
     port='3306',  # SQL port
     database='atm'  # Database to be used
 )
-
-
-def create_db_startup():
-    create_db_query = ("DROP SCHEMA IF EXISTS atm;"
-                       "CREATE SCHEMA atm;"
-                       "use atm;"
-
-                       "CREATE TABLE `account`("
-                       "firstName varchar(20) not null,"
-                       "lastName varchar(20) not null,"
-                       "Balance double not null,"
-                       "Pin int not null PRIMARY KEY"
-                       ");"
-
-                       "CREATE TABLE accountType("
-                       "id int not null, "
-                       "accountDescription varchar(20) not null"
-                       ");")
-
 
 def atmSimulator():
 
