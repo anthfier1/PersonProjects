@@ -1,0 +1,6 @@
+This is an ongoing project that I am currently working on.
+
+As of this moment the MySQL Database is almost finished, I have added some test data with test queries. 
+
+As for the Python side of the project, I am still working on it, I have gotten the project to interact with the database and am able to send and recive data 
+as well as update and change the database tables and information. 
